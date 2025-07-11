@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.ArrayList;
+
 public class App {
 
     public static void ifnum() {
@@ -76,7 +79,16 @@ public class App {
         }//반복문과 배열
     }
 
-    public static void main(String[] args) {
+    public static void listnum(){
+        List<String> fruits=new ArrayList<>();
+        fruits.add("apple");
+        fruits.add("banana");
+        for (String fruit : fruits){
+            System.out.println(fruit);
+        }
+    }
+
+    public static void main(String[]args) {
         ifnum();
         switchnum();
         whilenum();
@@ -86,5 +98,6 @@ public class App {
         fornum2();
         fornum3();
         fornum4();
+        listnum();
     }
 }
